@@ -1,0 +1,39 @@
+useEffect(()=>{
+// code goes here
+},[])
+
+It is a snippet of code which runs on a specific condition/variables
+Usage here:->
+when the row components loads on the screen,a piece of code is run to  makes a request to the tmdb database
+
+Row.js
+1.title
+2.container-contain poster
+
+state keeps track of all the movies.it is like a short term memory..when we refresh it disaapers or u can understand it as a place to store information...it is basically a way to write variable in react
+
+this is how we set state-here we will set the movie state
+const [movies, setMovies] = useState([]);//react hook concept-a hook is like a little functional pieces of code
+initially value of use state is set to null here
+
+now we need to populate this above piece of code
+
+when the row components load we want ,we want to make a request to the tmdb to fetch ,which is done using the useEffect of hooks.
+useEffect is a piece of code which runs on a specific conditions/variables
+
+
+useEffect(()=>{
+// code goes here
+},[]);  //[] bracket is left empty ,then the code run once and don't run agian..
+
+suppose if that [movies] ie []-bracket is not empty,then its gonna run once and it will run every time the movies changes ie it is dependent on that variable movie
+
+in const[movie,setMovie]-every time the movie will change it will change
+
+every time the row component will load this piece of code will fire always
+
+Things to implement in movie details section:->(MovieDetails.js)
+1.Image(poster_path/backdrop_path)
+2.Average Vote
+3.Overview
+4.Release Date  

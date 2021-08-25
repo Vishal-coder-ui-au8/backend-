@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+.app {
+  background-color: black;
+}
+
+.app_header {
+  background: green;
+}
+
+.app_signup {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 20%; */
+}
+
+.app_loginContainer {
+  margin-left: 89%;
+  padding-bottom: 10px;
+  /* background-color: white; */
+
+  /* margin-bottom: auto; */
+}
+
+.btn {
+  color: white;
+  margin-top: 20%;
+}
